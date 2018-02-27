@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114249849-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -9,7 +9,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-114249849-1');
         </script>
-		<meta name="description" content="Ketedaro">
+        <meta name="description" content="Ketedaro">
         <meta name="keywords" content="BITCOIN,VEGAN,FOOD,MEMES">
         <meta name="author" content="Andy Ketedaro">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -18,34 +18,67 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
-		<title>Wall of Fame</title>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div id="names"></div>
-			</div>
-		</div>
-		<!--  Scripts-->
+        <title>Wall of Fame</title>
+    </head>
+    <body>
+        <header>
+            <nav class="light-blue lighten-1">
+                <div class="nav-wrapper container">
+                    <a id="logo-container" onclick="Materialize.toast('Five', 2500)" href="#" class="brand-logo">High</a>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="tabs-swipe-demo" class="right hide-on-med-and-down">
+                        <li><a href="#">Donation</a></li>
+                        <li><a href="#">Wall of Fame</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div id="names"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer orange">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <p class="grey-text text-lighten-4">Et voilà</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer footer-copyright">
+                <div class="container">
+                    © 2020 Andy Ketedaro
+                    <a class="white-text right text-lighten-3" target="_blank" href="https://github.com/Ketedaro">Github</a>
+                </div>
+            </div>
+        </footer>
+        <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
-		
-		<script>
-			$(document).ready(function() {
-				load_home();
-			});
 
-			function load_home() {
-				 $.ajax({ 
-					url: 'https://raw.githubusercontent.com/Ketedaro/ESIEE/master/wof/data/names.json', 
-					success: function(data) { 
-						$("#names").html(data).text(); 
-					} 
-				});
-			}
-		
-		</script>
+        <script>
+            $(document).ready(function() {
+                load_home();
+            });
 
-	</body>
+            function load_home() {
+                $("#names").html("");
+                $.ajax({ 
+                    url: 'https://raw.githubusercontent.com/Ketedaro/ESIEE/master/wof/data/names.json', 
+                    success: function(data) {
+                      console.log(data[0]);
+                
+                     
+                    } 
+                });
+            }
+
+        </script>
+
+    </body>
 </html>

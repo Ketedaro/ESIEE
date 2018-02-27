@@ -23,8 +23,14 @@
     <body>
         <header>
             <nav class="light-blue lighten-1">
-                <div class="nav-wrapper container"><a id="logo-container" onclick="Materialize.toast('Five', 2500)" href="#" class="brand-logo">High</a>
+                <div class="nav-wrapper container">
+                    <a id="logo-container" onclick="Materialize.toast('Five', 2500)" href="#" class="brand-logo">High</a>
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="tabs-swipe-demo" class="right hide-on-med-and-down">
+                        <li><a href="/">Donation</a></li>
+                        <li><a href="/wof/">Wall of Fame</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -92,17 +98,17 @@
                 </div>
 
             </div>
-			
-			<div class="fixed-action-btn">
-				<a id="menu" class="btn btn-floating btn-large"><i class="material-icons">menu</i></a>
-			</div>
-			
-			<div id="menu_desc" class="tap-target #03a9f4" data-activates="menu">
-				<div class="tap-target-content white-text">
-					<h5>Redirection vers Paypal</h5>
-					<p class="white-text">Suite au don que vous allez faire, je m'engage à vous offrir une place sur mon <i>Wall of Fame</i> et un bonbon. Mettez votre nom et prénom en commentaire du don.</p>
-				</div>
-			</div>
+
+            <div class="fixed-action-btn">
+                <a id="menu" class="btn btn-floating btn-large"><i class="material-icons">menu</i></a>
+            </div>
+
+            <div id="menu_desc" class="tap-target #03a9f4" data-activates="menu">
+                <div class="tap-target-content white-text">
+                    <h5>Redirection vers Paypal</h5>
+                    <p class="white-text">Suite au don que vous allez faire, je m'engage à vous offrir une place sur mon <i>Wall of Fame</i> et un bonbon. Mettez votre nom et prénom en commentaire du don.</p>
+                </div>
+            </div>
         </main>
 
         <footer class="page-footer orange">
@@ -127,7 +133,7 @@
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="menu/js/materialize.js"></script>
         <script src="menu/js/init.js"></script>
-		<script src="menu/js/script.js"></script>
+        <script src="menu/js/script.js"></script>
 
         <script>
             var adresse = escape("unescape%28unescape%28String.fromCharCode%28107%2C101%2C116%2C101%2C100%2C97%2C114%2C111%2C46%2C100%2C100%2C110%2C115%2C46%2C110%2C101%2C116%2C47%2C119%2C101%2C98%2C47%29%29%29");

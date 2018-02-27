@@ -1,5 +1,8 @@
 {
- "names": [
-	"Andy Ketedaro"
- ]
+    "people": {
+        "names" : [
+            "Andy Ketedaro",
+            "Nicolas Hulot"
+        ]
+    }
 }
