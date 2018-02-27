@@ -21,9 +21,11 @@
 		<title>Wall of Fame</title>
 	</head>
 	<body>
-
-		<div id="names"></div>
-	
+		<div class="container">
+			<div class="row">
+				<div id="names"></div>
+			</div>
+		</div>
 		<!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
@@ -36,7 +38,7 @@
 
 			function load_home() {
 				 $.ajax({ 
-					url: 'https://github.com/Ketedaro/ESIEE/blob/master/wof/content.html', 
+					url: 'https://raw.githubusercontent.com/Ketedaro/ESIEE/master/wof/data/names.json', 
 					success: function(data) { 
 						$("#names").html(data).text(); 
 					} 

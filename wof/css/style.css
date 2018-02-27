@@ -1,0 +1,35 @@
+body {
+    background-color: white;
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+
+ main {
+     flex: 1 0 auto;
+ }
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.btn { 
+    background-color: orange;
+}
+
+.btn:hover { 
+    background-color: #29B6F6;
+}
+
+.fixed-action-btn {
+	bottom: 45px; 
+	right: 25px;
+}
+
+.tap-target {
+    background-color: #03a9f4;
+}
