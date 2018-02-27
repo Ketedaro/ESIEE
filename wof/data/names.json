@@ -1,7 +1,9 @@
-{
-    "names": 
-    [ 
-        "Andy Ketedaro",
-        "Nicolas Hulot" 
-    ]
-}
+[
+    {
+        "names": 
+        [ 
+            "Andy Ketedaro",
+            "Nicolas Hulot" 
+        ]
+    }
+]
