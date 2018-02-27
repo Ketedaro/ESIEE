@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114249849-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-114249849-1');
+        </script>
+        <meta name="description" content="Ketedaro">
+        <meta name="keywords" content="BITCOIN,VEGAN,FOOD,MEMES">
+        <meta name="author" content="Andy Ketedaro">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Welcome</title>
+        <!-- CSS  -->
+        <link rel="icon" href="menu/images/heart.ico" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="menu/css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+        <link href="menu/css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+    </head>
+    <body>
+        <header>
+            <nav class="light-blue lighten-1">
+                <div class="nav-wrapper container"><a id="logo-container" onclick="Materialize.toast('Five', 2500)" href="#" class="brand-logo">High</a>
+                    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="section no-pad-bot" id="index-banner">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center orange-text">Bonjour</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Pour financer mon futur Koala. Merci</h5>
+                    </div>
+                    <div class="row center">
+
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                            <input type="hidden" name="business"
+                                   value="andy.huhuang@gmail.com">
+
+                            <input type="hidden" name="cmd" value="_donations">
+
+                            <input type="hidden" name="currency_code" value="EUR">
+
+                            <button class="btn btn-large waves-effect waves-light" id="main_btn" type="submit" name="action">Faire un don
+                                <i class="material-icons left">euro_symbol</i>
+                            </button>
+                        </form>
+
+                    </div>
+                    <br><br>
+
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="section">
+
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <h2 class="center light-blue-text"><i class="material-icons">restaurant</i></h2>
+                                <h5 class="center">Se nourrir</h5>
+
+                                <p class="light">Les koalas passent environ trois à cinq heures par jour à manger activement. La prise de nourriture peut se faire à n'importe quel moment, mais se passe généralement la nuit. Il se nourrit exclusivement des feuilles d'eucalyptus.</p>
+                            </div>
+                        </div>
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <h2 class="center light-blue-text"><i class="material-icons">airline_seat_individual_suite</i></h2>
+                                <h5 class="center">Dormir</h5>
+
+                                <p class="light">Le koala est l’être qui dort le plus sur Terre, avec une moyenne de 20 heures de sommeil par jour. Avec une espérance de vie de 15 ans, il passe alors plus de 12 ans de sa vie en sommeil.</p>
+                            </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <h2 class="center light-blue-text"><i class="material-icons">tag_faces</i></h2>
+                                <h5 class="center">Être heureux</h5>
+
+                                <p class="light">La population de koalas a diminué de 40 % ces dernières années. La déforestation reste la cause principale de son extinction, il faudrait 20 à 30 ans de reforestation pour espérer sauver les koalas.  </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+			
+			<div class="fixed-action-btn">
+				<a id="menu" class="btn btn-floating btn-large"><i class="material-icons">menu</i></a>
+			</div>
+			
+			<div id="menu_desc" class="tap-target #03a9f4" data-activates="menu">
+				<div class="tap-target-content white-text">
+					<h5>Redirection vers Paypal</h5>
+					<p class="white-text">Suite au don que vous allez faire, je m'engage à vous offrir une place sur mon <i>Wall of Fame</i> et un bonbon. Mettez votre nom et prénom en commentaire du don.</p>
+				</div>
+			</div>
+        </main>
+
+        <footer class="page-footer orange">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <p class="grey-text text-lighten-4">À vous de trouver l'adresse de mon site web personnel...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer footer-copyright">
+                <div class="container">
+                    © 2020 Andy Ketedaro
+                    <a class="white-text right text-lighten-3" target="_blank" href="https://github.com/Ketedaro">Github</a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="menu/js/materialize.js"></script>
+        <script src="menu/js/init.js"></script>
+		<script src="menu/js/script.js"></script>
+
+        <script>
+            var adresse = escape("unescape%28unescape%28String.fromCharCode%28107%2C101%2C116%2C101%2C100%2C97%2C114%2C111%2C46%2C100%2C100%2C110%2C115%2C46%2C110%2C101%2C116%2C47%2C119%2C101%2C98%2C47%29%29%29");
+        </script>
+
+    </body>
+</html>

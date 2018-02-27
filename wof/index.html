@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114249849-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-114249849-1');
+        </script>
+		<meta name="description" content="Ketedaro">
+        <meta name="keywords" content="BITCOIN,VEGAN,FOOD,MEMES">
+        <meta name="author" content="Andy Ketedaro">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!-- CSS  -->
+        <link rel="icon" href="images/wof.ico" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+		<title>Wall of Fame</title>
+	</head>
+	<body>
+
+		<div id="names"></div>
+	
+		<!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				load_home();
+			});
+
+			function load_home() {
+				 $.ajax({ 
+					url: 'https://raw.githubusercontent.com/Ketedaro/Test/master/test.html', 
+					success: function(data) { 
+						$("#names").html(data).text(); 
+					} 
+				});
+			}
+		
+		</script>
+
+	</body>
+</html>
