@@ -1,8 +1,4 @@
-{
-    "people": {
-        "names" : [
-            "Andy Ketedaro",
-            "Nicolas Hulot"
-        ]
-    }
-}
+[
+    "Andy Ketedaro",
+    "Nicolas Hulot"
+]
