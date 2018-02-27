@@ -1,9 +1,10 @@
 [
-    {
-        "names": 
-        [ 
-            "Andy Ketedaro",
-            "Nicolas Hulot" 
-        ]
-    }
+	{
+		"surname" : "Andy",
+		"name": "Ketedaro"
+	},
+	{
+		"surname" : "Nicolas", 
+		"name": "#Hulot"
+	}
 ]
